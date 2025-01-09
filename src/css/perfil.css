@@ -1,0 +1,288 @@
+/* Resetando estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: white;
+  }
+
+  header {
+    width: 100%;
+  }
+  
+  /* Estilos do Header */
+  .profile-header {
+    display: flex;
+    background-color: #000000;
+    border-bottom: 1px solid white;
+   
+
+  
+  }
+  
+  
+  
+  .logo img {
+    width: 80px;
+  }
+  
+  .profile-info img{
+    width: 80px;
+  }
+  
+  .name {
+    font-size: 20px;
+    font-weight: 600;
+   
+  }
+
+  .title {
+ 
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .info {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+  }
+
+  .info-post  {
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+
+  .info-post h1 {
+    font-size: 20px;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-icon {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+  }
+  
+
+
+#posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+
+
+  
+
+.post {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid white;
+    margin: 10px;
+    color: white;
+    width: 500px;
+    padding: 20px;
+
+   
+}
+
+.post p {
+  flex-wrap: wrap;
+  max-width: 500px;
+  word-wrap: break-word; 
+  overflow-wrap: break-word; 
+}
+.post ,h1 ,h4, h3, p {
+    padding: 8px;
+}
+
+.post h3 {
+    margin-top: 16px;
+    margin-bottom: -13px;
+}
+
+.button-container {
+    display: flex; /* Ativa o flexbox */
+    gap: 10px; /* Adiciona um espaço entre os botões */
+}
+
+/* Estilos do botão de deletar */
+.delete-button {
+  cursor: pointer;
+  margin-top: 10px;
+    padding: 7px;
+    border-radius: 10px;
+    border-style: none;
+    width: 100px;
+    background-color: red;
+    color: white;
+}
+
+/* Estilos do botão de editar */
+.edit-button {
+  margin-top: 10px;
+  cursor: pointer;
+    padding: 7px;
+    border-radius: 10px;
+    border-style: none;
+    width: 100px;
+    background-color: rgba(23, 23, 202, 0.781);
+    color: white;
+}
+
+
+
+
+.editar_post {
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000c9;
+    padding: 30px;
+    color: #fff;
+    border-radius: 10px;
+    width: 300px; /* Largura fixa */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+}
+
+#formPost {
+  display: flex;
+  flex-direction: column; /* Alinha os campos em coluna */
+  gap: 15px; /* Espaçamento entre os elementos */
+}
+
+/* Título do formulário */
+#formPost h2 {
+  text-align: center;
+  font-size: 22px;
+  color: #333; /* Cor do texto */
+  margin-bottom: 10px;
+}
+
+/* Labels */
+label {
+  font-size: 14px;
+  color: #ffffff; /* Texto secundário */
+  font-weight: bold;
+}
+
+/* Campos de entrada */
+input, textarea {
+  font-weight: bold;
+  font-family: sans-serif;
+  color: black;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc; /* Borda cinza */
+  border-radius: 8px;
+  background-color: #fff; /* Fundo branco */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%; /* Largura total */
+  box-sizing: border-box; /* Inclui padding na largura */
+}
+
+/* Foco nos campos */
+input:focus, textarea:focus {
+  border-color: #9bbce0; /* Cor azul no foco */
+  box-shadow: 0 0 5px rgba(155, 188, 224, 0.7); /* Sombra suave no foco */
+  outline: none; /* Remove o outline padrão */
+}
+
+/* Estilo do botão */
+button {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #75b1f1; /* Fundo azul */
+  color: #fff; /* Texto branco */
+  border: none; /* Remove bordas */
+  border-radius: 8px;
+  cursor: pointer; /* Cursor de clique */
+
+}
+
+/* Hover no botão */
+#formPost button:hover {
+  background-color: #7aa6d3; /* Azul mais escuro no hover */
+  transform: translateY(-2px); /* Leve elevação */
+}
+
+/* Clique no botão */
+button:active {
+  transform: translateY(0); /* Volta ao estado inicial */
+  background-color: #678fb5; /* Azul mais intenso */
+}
+
+.empty_message {
+  margin-top: 20px;
+}
+
+.empty_message p {
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 10px;
+} 
+
+
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    #posts {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    #posts .title-area {
+        margin: 50px auto;
+        width: 200px;
+        height: 50px;
+    }
+
+    .title-area h1 {
+        font-size: 20px;
+    }
+
+    .profile-header h1 {
+        font-size: 35px;
+    }
+
+    .post {
+        max-width: 400px;
+        margin: auto;
+    }
+
+    .profile-info {
+      margin: 0px;
+    }
+
+    .info {
+      margin: 0px;
+      
+    }
+
+    .info img {
+      width: 60px;
+    }
+
+    .info h1 {
+      font-size: 20px;
+    }
+}

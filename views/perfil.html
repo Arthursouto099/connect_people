@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/perfil.css">
+    <title>Document</title>
+ 
+</head>
+
+<body>
+    <header class="profile-header" style="text-align: center; align-items: center;">
+         <div class="img" >
+           <a href="/views/home.html" style="padding: 10px;"><img src="/public/arrow_back_25dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt=""></div></a>
+          
+        <div class="profile-info" id="profile">
+          <div class="info"></div>
+         
+        </div>
+       
+      </header>
+
+
+
+      <div></div>
+
+
+      <section id="posts">
+
+        <div class="editar_post" id="editar" style="display: none;">
+          <button style="height: 40px; margin-right: 30px ;" onclick="removeFlexForm()">Voltar</button>
+          <form id="formPost">
+              <label for="titulo">Título:</label>
+              <input type="text" id="titulo" name="titulo" placeholder="Digite o título" required />
+      
+              <label for="conteudo">Conteúdo:</label>
+              <textarea id="conteudo" name="conteudo" placeholder="Digite o conteúdo" required></textarea>
+      
+              <label for="data">Data:</label>
+              <input type="date" id="data" name="data" required />
+      
+              <button type="submit">Editar Post</button>
+      </div>
+
+       
+      </section>
+    
+
+    <script src="/src/js/perfil.js"></script>
+</body>
+</html>

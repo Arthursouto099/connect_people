@@ -1,0 +1,458 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #9bbce0;
+    color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: 300px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffdd57;
+}
+
+#section_1 {
+    display: flex;
+}
+
+#section_1 .cadastrar_post {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000c9;
+    padding: 30px;
+    color: #fff;
+    border-radius: 10px;
+    width: 300px;
+    /* Largura fixa */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra para destaque */
+}
+
+.menu {
+    background-color: black;
+    width: 400px;
+    height: 800px;
+}
+
+
+
+.post {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid white;
+    margin: 10px;
+    color: white;
+    width: 500px;
+    padding: 20px;
+}
+
+.post h1 {
+    font-size: 20px;
+}
+
+.post p {
+    margin-top: -5px;
+    flex-wrap: wrap;
+    max-width: 500px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.post h3 {
+    margin-bottom: -10px;
+}
+
+.post h4 {
+    margin-bottom: 0px;
+}
+
+#formPost {
+    display: flex;
+    flex-direction: column;
+    /* Alinha os campos em coluna */
+    gap: 15px;
+    /* Espaçamento entre os elementos */
+}
+
+/* Título do formulário */
+#formPost h2 {
+    text-align: center;
+    font-size: 22px;
+    color: #333;
+    /* Cor do texto */
+    margin-bottom: 10px;
+}
+
+/* Labels */
+label {
+    font-size: 14px;
+    color: #ffffff;
+    /* Texto secundário */
+    font-weight: bold;
+}
+
+/* Campos de entrada */
+input,
+textarea {
+    font-weight: bold;
+    font-family: sans-serif;
+    color: black;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    /* Borda cinza */
+    border-radius: 8px;
+    background-color: #fff;
+    /* Fundo branco */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    /* Largura total */
+    box-sizing: border-box;
+    /* Inclui padding na largura */
+}
+
+/* Foco nos campos */
+input:focus,
+textarea:focus {
+    border-color: #9bbce0;
+    /* Cor azul no foco */
+    box-shadow: 0 0 5px rgba(155, 188, 224, 0.7);
+    /* Sombra suave no foco */
+    outline: none;
+    /* Remove o outline padrão */
+}
+
+/* Estilo do botão */
+button {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #75b1f1;
+    /* Fundo azul */
+    color: #fff;
+    /* Texto branco */
+    border: none;
+    /* Remove bordas */
+    border-radius: 8px;
+    cursor: pointer;
+    /* Cursor de clique */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover no botão */
+button:hover {
+    background-color: #7aa6d3;
+    /* Azul mais escuro no hover */
+    transform: translateY(-2px);
+    /* Leve elevação */
+}
+
+/* Clique no botão */
+button:active {
+    transform: translateY(0);
+    /* Volta ao estado inicial */
+    background-color: #678fb5;
+    /* Azul mais intenso */
+}
+
+
+.menu_lateral {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 20px;
+}
+
+
+.criar-post {
+    background-color: #9bbce0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.criar-post:hover {
+    background-color: #7aa6d3;
+    /* Cor ao passar o mouse */
+}
+
+.cadastrar_post {
+
+    position: absolute;
+    width: 700px;
+    height: 400px;
+    background-color: #ffdd57;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    background-color: #94b1d1;
+    color: #fff;
+    padding: 30px;
+    height: 100vh;
+    position: absolute;
+    height: 200px;
+    justify-content: center;
+    border-radius: 25px;
+}
+
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #c8c8c8;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.content h1 {
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+}
+
+.click_button {
+    display: none;
+}
+
+.sidebar {
+    display: none
+    
+}
+
+#comment {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000c9;
+    padding: 30px;
+    color: #fff;
+    border-radius: 10px;
+    width: 300px; /* Largura fixa */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; /* Alinha o conteúdo ao centro (horizontalmente) */
+    gap: 20px; /* Reduz o espaço entre os itens dentro */
+    z-index: 9999; /* Garante que o elemento fique acima de outros */
+}
+
+
+#commentForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#commentForm textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+
+
+}
+
+
+
+#commentForm textarea:focus {
+    border-color: #4A90E2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+    outline: none;
+}
+
+#commentForm button {
+    margin-top: 20px;
+
+}
+
+.comment {
+    border: 1px solid white;
+    padding: 15px;
+    margin-top: 9px;
+    border-radius: 20px;
+}
+
+.comment p {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+
+
+@media (max-width: 768px) {
+    #section_1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    #section_1  .cadastrar_post{
+        width: 90%; /* Ajuste da largura para 90% da tela */
+        max-width: 300px; 
+    }
+
+    .comment {
+        margin: auto;
+        margin-top: 10px;
+        width: 340px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    #comment {
+        width: 90%; /* Ajuste de largura para telas menores */
+        max-width: 300px; /* Largura máxima de 300px */
+        gap: 20px; /* Reduz o gap entre os elementos */
+        padding: 20px; /* Ajuste de padding */
+    }
+
+    .post {
+        max-width: 400px;
+        margin-left: 50px;
+        margin-right: 50px;
+
+    }
+
+    .post img {
+        padding-left: 10px;
+    }
+
+    .post span {
+        padding-left: 10px;
+    }
+
+    .post h1 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .post p {
+       padding-left: 10px;
+       padding-right: 10px;
+    }
+    
+    .post h3 {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    
+    .post h4 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .comment p {
+        padding: 0px;
+    }
+    
+    .coment-area button {
+        margin-left: 10px;
+    }
+
+
+    header nav {
+        display: none;
+    }
+
+    header .click_button {
+        position: absolute;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .menu_lateral button {
+        margin: none;
+        margin: auto;
+        padding: none;
+
+    }
+
+
+    .click_button {
+        display: flex;
+    }
+
+
+
+    .sidebar {
+        display: none
+    }
+}

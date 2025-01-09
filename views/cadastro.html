@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/cadastro.css">
+    <title>Area de cadastro</title>
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Cadastro</h1>
+        <form action="../views/home.html">
+            <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Idade</label>
+                <input type="number" id="age" name="age" placeholder="Digite sua idade" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="text" id="password" name="password" placeholder="Digite sua senha" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Enviar</button>
+            </div>
+
+            <p></p>
+        </form>
+        <div class="footer">
+            <p>Já possui uma conta? <a href="/views/login.html">Faça Login</a></p>
+        </div>
+    </div>
+    <img src="/images/user-profile-icon-in-flat-style-member-avatar-illustration-on-isolated-background-human-permission-sign-business-concept-vector-removebg-preview.png" alt="">
+
+
+
+
+
+
+    <script src="/src/js/cadastro.js"></script>
+</body>
+</html>
