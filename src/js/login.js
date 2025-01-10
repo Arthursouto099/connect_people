@@ -30,8 +30,19 @@ document.querySelector('form').addEventListener('submit', async (event) => {
 })
 
 
+async function  ping() {
+    const response = await fetch("https://connect-people-api.onrender.com/ping") 
+    if(!response.ok) {
+        console.log("Ainda estou me conectando")
+    }
+
+    console.log("estou conectado")
+    
+}
 
 
+
+ping()
 
 async function receivesValuesInFormLogin() {
     return {
